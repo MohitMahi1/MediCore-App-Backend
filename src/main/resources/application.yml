@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: MediCore
+  data:
+    mongodb:
+      uri: mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@cluster0.gyplr5a.mongodb.net/${MONGO_DB}?retryWrites=true&w=majority&appName=Cluster0
+
+jwt:
+  auth:
+    app: MediCore
+    secret_key: ${JWT_KEY}
+    expires_in: 7200
